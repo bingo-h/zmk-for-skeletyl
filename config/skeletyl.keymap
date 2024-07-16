@@ -88,6 +88,15 @@
             global-quick-tap;
             quick-tap-ms = <400>;
         };
+
+        LayerChange: LayerChange {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYERCHANGE";
+            bindings = <&mo>, <&to>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     keymap {
@@ -95,28 +104,28 @@
 
         default_layer {
             bindings = <
-&kp Q            &kp W             &kp F                &kp P  &kp G         &kp SEMI             &kp L  &kp U  &kp Y       &kp J
-&kp A            &kp R             &kp S                &kp T  &kp D         &kp H                &kp N  &kp E  &kp I       &kp O
-&kp Z            &kp X             &kp C                &kp V  &kp COMMA     &kp B                &kp M  &kp K  &kp PERIOD  &kp FSLH
-       &kp LGUI         &kp LCTRL         &ltq 1 SPACE         &ltq 2 ENTER  &kp LALT  &kp LSHFT
+&kp Q            &kp W             &kp F                    &kp P  &kp G             &kp SEMI             &kp L  &kp U  &kp Y       &kp J
+&kp A            &kp R             &kp S                    &kp T  &kp D             &kp H                &kp N  &kp E  &kp I       &kp O
+&kp Z            &kp X             &kp C                    &kp V  &kp COMMA         &kp B                &kp M  &kp K  &kp PERIOD  &kp FSLH
+       &kp LGUI         &kp LCTRL         &LayerChange 1 1         &LayerChange 2 2  &kp LALT  &kp LSHFT
             >;
         };
 
         lower_layer {
             bindings = <
-&kp N1               &kp N2                   &kp N3              &kp N4    &kp N5         &kp N6               &kp N7          &kp N8          &kp N9           &kp N0
-&kp TAB              &kp SPACE                &kp INSERT          &kp HOME  &kp PAGE_UP    &trans               &trans          &kp UP_ARROW    &trans           &kp BACKSPACE
-&kp ENTER            &kp CAPSLOCK             &kp DELETE          &kp END   &kp PAGE_DOWN  &trans               &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ESCAPE
-           &kp LGUI                &kp LCTRL              &trans            &mo 3          &kp LALT  &kp LSHFT
+&kp N1               &kp N2                   &kp N3             &kp N4    &kp N5         &kp N6               &kp N7          &kp N8          &kp N9           &kp N0
+&kp TAB              &kp SPACE                &kp INSERT         &kp HOME  &kp PAGE_UP    &trans               &trans          &kp UP_ARROW    &trans           &kp BACKSPACE
+&kp ENTER            &kp CAPSLOCK             &kp DELETE         &kp END   &kp PAGE_DOWN  &trans               &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ESCAPE
+           &kp LGUI                &kp LCTRL              &to 0            &mo 3          &kp LALT  &kp LSHFT
             >;
         };
 
         raise_layer {
             bindings = <
-&kp EXCLAMATION                &kp AT_SIGN                &kp HASH               &kp DOLLAR       &kp PERCENT  &kp CARET               &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp TAB                        &kp SPACE                  &kp UP_ARROW           &trans           &kp GRAVE    &kp MINUS               &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp BACKSPACE
-&kp ENTER                      &kp LEFT_ARROW             &kp DOWN_ARROW         &kp RIGHT_ARROW  &kp TILDE    &kp UNDERSCORE          &kp PLUS       &kp LEFT_BRACE    &kp RIGHT_BRACE       &kp ESCAPE
-                 &kp LEFT_GUI                  &kp LCTRL                  &mo 3                   &trans       &trans          &trans
+&kp EXCLAMATION                &kp AT_SIGN                &kp HASH               &kp DOLLAR       &kp PERCENT  &kp CARET                       &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp TAB                        &kp SPACE                  &kp UP_ARROW           &trans           &kp GRAVE    &kp MINUS                       &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp BACKSPACE
+&kp ENTER                      &kp LEFT_ARROW             &kp DOWN_ARROW         &kp RIGHT_ARROW  &kp TILDE    &kp UNDERSCORE                  &kp PLUS       &kp LEFT_BRACE    &kp RIGHT_BRACE       &kp ESCAPE
+                 &kp LEFT_GUI                  &kp LCTRL                  &mo 3                   &to 0        &kp LEFT_ALT    &kp LEFT_SHIFT
             >;
         };
 
