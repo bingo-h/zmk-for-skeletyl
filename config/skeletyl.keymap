@@ -70,7 +70,12 @@
 
         space {
             bindings = <&kp SPACE>;
-            key-positions = <11 10>;
+            key-positions = <11 12>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <21 22>;
         };
     };
 
