@@ -62,6 +62,16 @@
             bindings = <&kp PIPE>;
             key-positions = <14 15>;
         };
+
+        Slash {
+            bindings = <&kp SLASH>;
+            key-positions = <24 25>;
+        };
+
+        space {
+            bindings = <&kp SPACE>;
+            key-positions = <11 10>;
+        };
     };
 
     behaviors {
@@ -115,7 +125,7 @@
             bindings = <
 &kp ESCAPE            &kp HOME                   &kp UP_ARROW           &kp END          &kp PAGE_UP    &trans                      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0
 &kp TAB               &kp LEFT_ARROW             &kp DOWN_ARROW         &kp RIGHT_ARROW  &kp PAGE_DOWN  &trans                      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp BACKSPACE
-&kp ENTER             &kp CAPSLOCK               &trans                 &trans           &trans         &kp PRINTSCREEN             &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp DELETE
+&kp ENTER             &kp CAPSLOCK               &kp LG(SPACE)          &trans           &trans         &kp PRINTSCREEN             &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp DELETE
             &kp LGUI                  &kp LCTRL                  &to 0                   &mo 3          &kp LALT         &kp LSHFT
             >;
         };
