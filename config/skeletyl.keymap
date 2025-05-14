@@ -128,10 +128,10 @@
 
         lower_layer {
             bindings = <
-&kp ESCAPE            &kp HOME                   &kp UP_ARROW           &kp END          &kp PAGE_UP    &trans                      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0
-&kp TAB               &kp LEFT_ARROW             &kp DOWN_ARROW         &kp RIGHT_ARROW  &kp PAGE_DOWN  &trans                      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp BACKSPACE
-&kp ENTER             &kp CAPSLOCK               &kp LG(SPACE)          &trans           &trans         &kp PRINTSCREEN             &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp DELETE
-            &kp LGUI                  &kp LCTRL                  &to 0                   &mo 3          &kp LALT         &kp LSHFT
+&kp NUMBER_1            &kp NUMBER_2               &kp NUMBER_3           &kp NUMBER_4     &kp NUMBER_5   &kp NUMBER_6                &kp NUMBER_7    &kp NUMBER_8    &kp NUMBER_9     &kp N0
+&kp TAB                 &kp HOME                   &kp UP_ARROW           &kp END          &kp PAGE_UP    &trans                      &trans          &kp UP_ARROW    &trans           &kp BACKSPACE
+&kp ENTER               &kp LEFT_ARROW             &kp DOWN_ARROW         &kp RIGHT_ARROW  &kp PAGE_DOWN  &kp PRINTSCREEN             &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE
+              &kp LGUI                  &kp LCTRL                  &to 0                   &mo 3          &kp LALT         &kp LSHFT
             >;
         };
 
