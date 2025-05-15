@@ -73,9 +73,19 @@
             key-positions = <21 22>;
         };
 
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <1 2>;
+        };
+
         esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <1 2>;
+            key-positions = <10 11>;
+        };
+
+        InputSource {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <0 1>;
         };
     };
 
