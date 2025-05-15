@@ -63,11 +63,6 @@
             key-positions = <14 15>;
         };
 
-        Slash {
-            bindings = <&kp SLASH>;
-            key-positions = <24 25>;
-        };
-
         space {
             bindings = <&kp SPACE>;
             key-positions = <11 12>;
