@@ -19,25 +19,25 @@
 
         left_bkt {
             bindings = <&kp LBKT>;
-            key-positions = <3 2>;
+            key-positions = <12 13>;
             timeout-ms = <50>;
         };
 
         right_bkt {
             bindings = <&kp RBKT>;
-            key-positions = <6 7>;
+            key-positions = <16 17>;
             timeout-ms = <50>;
         };
 
         left_par {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <12 13>;
+            key-positions = <2 3>;
             timeout-ms = <50>;
         };
 
         right_par {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <16 17>;
+            key-positions = <6 7>;
             timeout-ms = <50>;
         };
 
