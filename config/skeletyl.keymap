@@ -87,6 +87,11 @@
             bindings = <&kp LG(SPACE)>;
             key-positions = <0 1>;
         };
+
+        Backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <7 8>;
+        };
     };
 
     behaviors {
@@ -138,10 +143,10 @@
 
         lower_layer {
             bindings = <
-&kp NUMBER_1            &kp NUMBER_2               &kp NUMBER_3           &kp NUMBER_4     &kp NUMBER_5   &kp NUMBER_6                &kp NUMBER_7    &kp NUMBER_8    &kp NUMBER_9     &kp N0
-&kp TAB                 &kp HOME                   &kp UP_ARROW           &kp END          &kp PAGE_UP    &trans                      &trans          &kp UP_ARROW    &trans           &kp BACKSPACE
-&kp ENTER               &kp LEFT_ARROW             &kp DOWN_ARROW         &kp RIGHT_ARROW  &kp PAGE_DOWN  &kp PRINTSCREEN             &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE
-              &kp LGUI                  &kp LCTRL                  &to 0                   &mo 3          &kp LALT         &kp LSHFT
+&kp NUMBER_1            &kp NUMBER_2             &kp NUMBER_3          &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6                &kp NUMBER_7    &kp NUMBER_8    &kp NUMBER_9     &kp N0
+&kp TAB                 &kp CAPSLOCK             &kp PAGE_UP           &trans        &trans        &trans                      &trans          &kp UP_ARROW    &trans           &kp BACKSPACE
+&kp ENTER               &kp HOME                 &kp PAGE_DOWN         &kp END       &trans        &kp PRINTSCREEN             &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE
+              &kp LGUI                &kp LCTRL                 &to 0                &mo 3         &kp LALT         &kp LSHFT
             >;
         };
 
