@@ -85,7 +85,7 @@
 
         InputSource {
             bindings = <&kp LG(SPACE)>;
-            key-positions = <0 1>;
+            key-positions = <20 21>;
         };
 
         Backspace {
