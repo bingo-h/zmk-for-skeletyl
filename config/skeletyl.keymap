@@ -143,9 +143,9 @@
 
         lower_layer {
             bindings = <
-&kp NUMBER_1            &kp NUMBER_2             &kp NUMBER_3          &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6                &kp NUMBER_7    &kp NUMBER_8    &kp NUMBER_9     &kp N0
-&kp TAB                 &kp CAPSLOCK             &kp PAGE_UP           &trans        &trans        &trans                      &trans          &kp UP_ARROW    &trans           &kp BACKSPACE
-&kp ENTER               &kp HOME                 &kp PAGE_DOWN         &kp END       &trans        &kp PRINTSCREEN             &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE
+&kp TAB                 &kp CAPS                 &kp PAGE_UP           &trans        &trans        &kp PRINTSCREEN             &trans        &kp UP_ARROW    &trans        &kp BACKSPACE
+&kp ENTER               &kp HOME                 &kp PAGE_DOWN         &kp END       &trans        &trans                      &kp LEFT      &kp DOWN_ARROW  &kp RIGHT     &kp DELETE
+&kp NUMBER_1            &kp NUMBER_2             &kp NUMBER_3          &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6                &kp NUMBER_7  &kp NUMBER_8    &kp NUMBER_9  &kp NUMBER_0
               &kp LGUI                &kp LCTRL                 &to 0                &mo 3         &kp LALT         &kp LSHFT
             >;
         };
