@@ -63,8 +63,8 @@
             key-positions = <27 28>;
         };
 
-        space {
-            bindings = <&kp SPACE>;
+        esc {
+            bindings = <&kp ESCAPE>;
             key-positions = <11 12>;
         };
 
@@ -78,11 +78,6 @@
             key-positions = <1 2>;
         };
 
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <10 11>;
-        };
-
         InputSource {
             bindings = <&kp LG(SPACE)>;
             key-positions = <23 24>;
@@ -91,6 +86,11 @@
         Backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <7 8>;
+        };
+
+        Terminal {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <25 26>;
         };
     };
 
