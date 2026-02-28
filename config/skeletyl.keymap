@@ -63,8 +63,8 @@
             key-positions = <21 20>;
         };
 
-        caps {
-            bindings = <&kp CAPSLOCK>;
+        tab {
+            bindings = <&kp TAB>;
             key-positions = <1 0>;
         };
 
@@ -128,8 +128,8 @@
 
         lower_layer {
             bindings = <
-&kp TAB                 &none                    &kp PAGE_UP           &trans        &trans          &kp PRINTSCREEN         &trans        &kp UP_ARROW    &trans        &kp DELETE
-&kp ENTER               &kp HOME                 &kp PAGE_DOWN         &kp END       &trans          &trans                  &kp LEFT      &kp DOWN_ARROW  &kp RIGHT     &kp SPACE
+&kp TAB                 &kp CAPS                 &kp PAGE_UP           &trans        &trans          &kp PRINTSCREEN         &trans        &kp UP_ARROW    &trans        &kp BACKSPACE
+&kp ENTER               &kp HOME                 &kp PAGE_DOWN         &kp END       &trans          &kp DELETE              &kp LEFT      &kp DOWN_ARROW  &kp RIGHT     &kp SPACE
 &kp NUMBER_1            &kp NUMBER_2             &kp NUMBER_3          &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6            &kp NUMBER_7  &kp NUMBER_8    &kp NUMBER_9  &kp NUMBER_0
               &kp LGUI                &kp LCTRL                 &to 0                &kp LEFT_SHIFT  &kp LALT         &mo 3
             >;
