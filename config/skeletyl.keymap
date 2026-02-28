@@ -77,6 +77,11 @@
             bindings = <&kp LG(SPACE)>;
             key-positions = <25 26>;
         };
+
+        Backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <8 9>;
+        };
     };
 
     behaviors {
