@@ -58,14 +58,9 @@
             key-positions = <11 10>;
         };
 
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <21 20>;
-        };
-
         tab {
             bindings = <&kp TAB>;
-            key-positions = <1 0>;
+            key-positions = <21 20>;
         };
 
         InputSource {
@@ -74,13 +69,8 @@
         };
 
         Terminal {
-            bindings = <&kp LG(SPACE)>;
+            bindings = <&kp LC(SPACE)>;
             key-positions = <25 26>;
-        };
-
-        Backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <8 9>;
         };
     };
 
@@ -133,9 +123,9 @@
 
         lower_layer {
             bindings = <
-&kp TAB                 &kp CAPS                 &kp PAGE_UP           &trans        &trans          &kp PRINTSCREEN         &trans        &kp UP_ARROW    &trans        &kp BACKSPACE
-&kp ENTER               &kp HOME                 &kp PAGE_DOWN         &kp END       &trans          &kp DELETE              &kp LEFT      &kp DOWN_ARROW  &kp RIGHT     &kp SPACE
-&kp NUMBER_1            &kp NUMBER_2             &kp NUMBER_3          &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6            &kp NUMBER_7  &kp NUMBER_8    &kp NUMBER_9  &kp NUMBER_0
+&kp TAB                 &kp CAPS                 &kp PAGE_UP           &trans        &trans          &kp PRINTSCREEN         &none         &kp UP_ARROW    &kp BACKSPACE  &none
+&kp ENTER               &kp HOME                 &kp PAGE_DOWN         &kp END       &trans          &kp DELETE              &kp LEFT      &kp DOWN_ARROW  &kp RIGHT      &kp SPACE
+&kp NUMBER_1            &kp NUMBER_2             &kp NUMBER_3          &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6            &kp NUMBER_7  &kp NUMBER_8    &kp NUMBER_9   &kp NUMBER_0
               &kp LGUI                &kp LCTRL                 &to 0                &kp LEFT_SHIFT  &kp LALT         &mo 3
             >;
         };
