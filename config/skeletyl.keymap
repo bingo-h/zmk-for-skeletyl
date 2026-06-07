@@ -146,10 +146,10 @@
 
         raise_layer {
             bindings = <
-&trans                &trans                &c8                   &trans        &trans        &trans                &trans        &kp PAGE_UP    &c13          &c14
-&kp LEFT_GUI          &c6                   &c7                   &c9           &c10          &c12                  &kp HOME      &kp PAGE_DOWN  &kp END       &c11
-&kp NUMBER_1          &kp NUMBER_2          &kp NUMBER_3          &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6          &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9  &kp NUMBER_0
-              &trans                &trans                &trans                &trans        &mo 3         &trans
+&trans                &trans                &c8                   &trans        &trans        &trans                      &trans        &kp PAGE_UP    &c13          &c14
+&kp LEFT_GUI          &c6                   &c7                   &c9           &c10          &c12                        &kp HOME      &kp PAGE_DOWN  &kp END       &c11
+&kp NUMBER_1          &kp NUMBER_2          &kp NUMBER_3          &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6                &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9  &kp NUMBER_0
+              &trans                &trans                &trans                &trans        &mo 3         &kp CAPSLOCK
             >;
         };
 
